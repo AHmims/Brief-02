@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/safi.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>YouCode</title>
 </head>
 
@@ -24,9 +24,15 @@
         </div>
         <div id="Body">
             <div id="login-Form">
-                <span>Identifier :</span>
-                <div>
-
+                <span id="login-title">Identifier :</span>
+                <div id="login-inputs-cont">
+                    <input type="text" class="login-inputs" placeholder="Adresse Email" />
+                    <input type="password" class="login-inputs" placeholder="Mot de pass" />
+                </div>
+                <input type="button" value="LOGIN" class="login-inputs" id="login-btn" />
+                <div id="login-txt">
+                    <span class="login-txt">Mot de passe oublié ?</span>
+                    <span class="login-txt">Vous n'avez pas de compte? <span id="login-register">REGISTER</span></span>
                 </div>
             </div>
         </div>

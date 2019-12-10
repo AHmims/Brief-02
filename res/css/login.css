@@ -1,11 +1,13 @@
 :root {
     --offwhite: #FCFDFF;
+    --transwhite: rgba(255, 255, 255, 0.5);
     --blue: #038DFE;
     --blue2: #0677D3;
     --tranBlue: rgba(3, 141, 254, 0.70);
     --darkText: #2B2B2B;
     --darkBlue: #496174;
     --gray: #959494;
+    --border: #8A8A8A;
 }
 
 
@@ -156,4 +158,55 @@ html {
 #login-Form {
     width: 850px;
     height: 456px;
+}
+
+#login-title {
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: var(--darkText);
+}
+
+#login-inputs-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-inputs {
+    width: 737px;
+    height: 63px;
+    margin-top: 30px;
+    background-color: var(--transwhite);
+    border: 1px solid var(--border);
+    border-radius: 7.5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: Montserrat;
+    color: var(--border);
+    outline: none;
+}
+
+#login-btn {
+    height: 46px;
+    width: 156px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#login-txt {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-txt {
+    font-size: 15px;
+    font-family: Montserrat;
+    color: var(--darkText);
+}
+
+#login-register {
+    color: var(--blue);
+    cursor: pointer;
 }
