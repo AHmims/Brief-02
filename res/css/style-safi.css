@@ -50,10 +50,10 @@ html {
     font-weight: 500;
     margin: 0 15px;
     font-size: 14px;
-    text-decoration: none;
     /*  */
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navText:hover {
@@ -175,7 +175,7 @@ html {
 
 #part2-txt {
     margin-top: 15px;
-    width: 59%;
+    width: 30%;
     font-family: Open sans;
     font-size: 15px;
     color: var(--darkText);
@@ -183,174 +183,60 @@ html {
 
 /*  */
 #part3 {
+    width: 60%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    margin: 45px auto;
     justify-content: center;
-    /* align-items: center; */
-    /* width: 60%; */
+    align-items: baseline;
 }
 
 .part3-item {
-    width: 18%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background-color: red; */
-    margin: 0 5px;
-    text-align: center;
-    margin-top: 40px;
-    /*  */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    width: 30%;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.part3-item span {
+    text-align: center;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#part3-item-cont {
+    flex: 1;
+    /*  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .part3-item img {
-    /* height: 46px; */
-    /* width: 46px; */
     object-fit: contain;
-}
-
-.part3-title {
-    font-size: 24px;
-    font-family: Montserrat;
-    font-weight: 500;
-    color: var(--darkBlue);
-    margin-top: 20px;
-}
-
-.part3-content {
-    font-size: 14px;
-    font-family: Open Sans;
-    font-weight: 100;
-    margin-top: 20px;
-    color: black;
-    letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 
 /*  */
 #part4 {
-    background-color: var(--blue2);
-    margin-top: 50px;
-    /*  */
-    display: flex;
-    flex-direction: row;
-}
-
-.part4-item {
-    background-color: var(--blue2);
-    width: 50%;
-    height: 480px;
-    /*  */
-    font-family: Montserrat;
-    color: white;
-    letter-spacing: 2px;
-    /*  */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #part4-img {
-    background-image: url('../img/img1.png');
+    width: 945px;
+    height: 473px;
     background-position: center;
     background-size: cover;
-    /*  */
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-/*  */
-#part5 {
-    margin-top: 50px;
-    /*  */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#part5-title {
-    font-family: Montserrat;
-    color: var(--darkText);
-    letter-spacing: 5px;
-    font-size: 36px;
-}
-
-#part5-desc {
-    margin-top: 25px;
-    width: 1050px;
-    font-family: Open Sans;
-    font-size: 15px;
-    text-align: center;
-    color: var(--darkText);
-}
-
-#part5-maps {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-}
-
-.part5-map {
-    width: 550px;
-    height: 267px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-color: yellow;
-    background-position: center;
-    background-size: cover;
-    /*  */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.part5-map:first-child {
-    margin-right: 10px;
-    background-image: url('../img/img2.png');
-}
-
-.part5-map:last-child {
-    margin-left: 10px;
-    background-image: url('../img/img3.png');
-}
-
-.part5-map-details {
-    background-color: var(--offwhite);
-    height: 53px;
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    /*  */
-    display: flex;
-    align-items: center;
-}
-
-.part5-map-desc {
-    margin-left: 14px;
-}
-
-.part5-map-desc-title {
-    font-family: Montserrat;
-    color: var(--blue);
-    letter-spacing: 2px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 9px;
-}
-
-.part5-map-desc-txt {
-    font-family: Montserrat;
-    color: var(--darkText);
-}
-
-#part5-map-desc-txt-Y {
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-#part5-map-desc-txt-S {
-    font-size: 11px;
-    letter-spacing: 1px;
+    background-image: url('../img/img6.png');
+    border-radius: 5px;
 }
 
 /*  */
@@ -380,6 +266,7 @@ html {
     background-color: var(--blue);
     border-radius: 99999px;
     box-shadow: 0px 0px 30px var(--tranBlue);
+    /*  */
     user-select: none;
     cursor: pointer;
     transition: all 200ms ease-in-out;
@@ -390,99 +277,6 @@ html {
     color: var(--blue);
 }
 
-/*  */
-#part7 {
-    margin-top: 125px;
-    display: flex;
-    flex-direction: row;
-}
-
-.part7-items {
-    width: 50%;
-    height: 400px;
-}
-
-#part7-left {
-    background-color: var(--blue);
-    /*  */
-    display: flex;
-    flex-direction: row;
-}
-
-#part7-left-img {
-    width: 691px;
-    height: 100%;
-    /* background-color: red; */
-    background-image: url('../img/img4.png');
-    background-position: center;
-    background-size: 104.5%;
-
-}
-
-#part7-left-details {
-    width: 270px;
-    /*  */
-    display: flex;
-    flex-direction: column;
-}
-
-.part7-left-data {
-    width: 100%;
-    height: 133px;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    /*  */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: Montserrat;
-}
-
-.part7-left-data:last-of-type {
-    border-bottom: none;
-}
-
-.part7-left-title {
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.part7-left-desc {
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 2px;
-    width: 230px;
-    margin-top: 15px;
-}
-
-#part7-right {
-    background-color: var(--blue2);
-    /*  */
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    /*  */
-    justify-content: center;
-    align-items: center;
-}
-
-#part7-right span {
-    margin-top: -25px;
-}
-
-#part7-right img {
-    object-fit: none;
-    margin-top: 55px;
-}
-
-/*  */
 /*  */
 #Footer {
     width: 100%;
@@ -508,6 +302,7 @@ html {
 .footer-sections:last-of-type {
     align-items: flex-end;
 }
+
 
 .footer-sections:first-of-type {
     align-items: flex-start;

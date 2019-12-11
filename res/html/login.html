@@ -11,15 +11,17 @@
     <div id="bg"></div>
     <div id="Container">
         <div id="Navbar">
-            <img src="../img/logo.png" alt="YouCode">
+            <a href="../../index.html">
+                <img src="../img/logo.png" alt="YouCode">
+            </a>
             <div>
-                <span class="navText">Accueil</span>
-                <span class="navText">Campus</span>
-                <span class="navText">Principes pédagogiques</span>
-                <span class="navText">Programme</span>
-                <span class="navText navBtns" id="navbtn1">Nous Rejoinder</span>
-                <span class="navText navBtns" id="navbtn2">Identifier / Inscrire</span>
-                <span class="navText" id="navLangue">Langue v</span>
+                <a href="../../index.html" class="navText">Accueil</a>
+                <a href="./index-safi.html" class="navText">Campus</a>
+                <a href="" class="navText">Principes pédagogiques</a>
+                <a href="" class="navText">Programme</a>
+                <a href="" class="navText navBtns" id="navbtn1">Nous Rejoinder</a>
+                <a href="./login.html" class="navText navBtns" id="navbtn2">Identifier / Inscrire</a>
+                <a href="" class="navText" id="navLangue">Langue v</a>
             </div>
         </div>
         <div id="Body">
@@ -29,10 +31,13 @@
                     <input type="text" class="login-inputs" placeholder="Adresse Email" />
                     <input type="password" class="login-inputs" placeholder="Mot de pass" />
                 </div>
-                <input type="button" value="LOGIN" class="login-inputs" id="login-btn" />
+                <a href="./dashBoard.html">
+                    <input type="button" value="LOGIN" class="login-inputs" id="login-btn" />
+                </a>
                 <div id="login-txt">
                     <span class="login-txt">Mot de passe oublié ?</span>
-                    <span class="login-txt">Vous n'avez pas de compte? <span id="login-register">REGISTER</span></span>
+                    <span class="login-txt">Vous n'avez pas de compte? <a id="login-register"
+                            href="./register.html">REGISTER</a></span>
                 </div>
             </div>
         </div>
@@ -40,7 +45,7 @@
             <div class="footer-sections">
                 <span class="footer-txt">Contactez-nous sur:</span>
                 <span id="footer-email-cont">
-                    <img src="" alt="">
+                    <img src="../img/Icon material-email.png" alt="">
                     <span id="footer-email">support@Youcode.ma</span>
                 </span>
             </div>
@@ -49,11 +54,8 @@
             </div>
             <div class="footer-sections">
                 <span class="footer-txt">Suivez-nous sur les réseaux sociaux</span>
-                <span>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <span style="margin-right: 15px;margin-top: 10px;">
+                    <img src="../img/icons.png" alt="">
                 </span>
             </div>
         </div>

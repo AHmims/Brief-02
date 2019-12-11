@@ -58,6 +58,7 @@ html {
     /*  */
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navText:hover {
